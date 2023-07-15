@@ -47,3 +47,62 @@ export interface Locales {
 export interface JSONSerializable<T> {
     toJSON(): T;
 }
+
+export interface EmbedData {
+    title?: string;
+    type?: EmbedType;
+    description?: string;
+    url?: string;
+    timestamp?: string;
+    color?: number;
+    footer?: EmbedFooterData;
+    image?: EmbedImageData;
+    thumbnail?: EmbedThumbnailData;
+    video?: EmbedVideoData;
+    provider?: EmbedProviderData;
+    author?: EmbedAuthorData;
+    fields?: EmbedFieldData[];
+}
+
+export interface EmbedFieldData {
+    name: string;
+    value: string;
+    inline?: boolean;
+}
+
+export interface EmbedAuthorData {
+    name: string;
+    url?: string;
+    icon_url?: string;
+    proxy_icon_url?: string;
+}
+
+export interface EmbedProviderData {
+    name?: string;
+    url?: string;
+}
+
+export type EmbedVideoData = Partial<EmbedImageData>;
+export type EmbedThumbnailData = EmbedImageData;
+
+export interface EmbedImageData {
+    url: string;
+    proxy_url?: string;
+    height?: number;
+    width?: number;
+}
+
+export interface EmbedFooterData {
+    text: string;
+    icon_url?: string;
+    proxy_icon_url?: string;
+}
+
+export enum EmbedType {
+    Rich = 'rich',
+    Image = 'image',
+    Video = 'video',
+    Gifv = 'gifv',
+    Article = 'article',
+    Link = 'link'
+}
