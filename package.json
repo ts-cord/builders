@@ -1,7 +1,7 @@
 {
   "name": "@ts-cord/builders",
   "version": "0.0.1",
-  "description": "Utilty package for builders",
+  "description": "A set of util builders",
   "main": "src/index.ts",
   "scripts": {
     "dev": "tsx index.ts",
