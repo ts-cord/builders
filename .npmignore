@@ -1,0 +1,6 @@
+# Lib tests
+index.test.ts
+
+# Lint
+.eslint*
+.cz.json

@@ -1,8 +1,6 @@
-#Node
-
+# Node
 package-lock.json
 node_modules/
 
-#Lib tests
-
+# Lib tests 
 index.test.ts
