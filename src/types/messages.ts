@@ -1,3 +1,7 @@
+/**
+ * Types of a channel
+ * @see https://discord.com/developers/docs/resources/channel#channel-object-channel-types
+ */
 export enum ChannelType {
     GuildText,
     DM,
